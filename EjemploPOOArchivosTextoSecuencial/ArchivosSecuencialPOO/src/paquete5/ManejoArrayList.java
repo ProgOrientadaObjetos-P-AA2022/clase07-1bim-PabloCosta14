@@ -23,6 +23,7 @@ public class ManejoArrayList {
         profesores[1] = prof2;
         
         for (int i = 0; i < profesores.length; i++) {
+            Profesor p = profesores[i];
             System.out.printf("%s - %s\n", profesores[i].obtenerNombre(),
                     profesores[i].obtenerTipo());
         }
@@ -30,13 +31,16 @@ public class ManejoArrayList {
         System.out.println("-----------------------------");
         
         // ArrayList
+                   //tipo de dato del array
+                 //   |
+                 //   v
         ArrayList <Profesor> profesores2 = new ArrayList<>();
-        profesores2.add(prof1);
+        profesores2.add(prof1); //add = agregar valores
         profesores2.add(prof2);
         
         for (int i = 0; i < profesores2.size(); i++) {
             System.out.printf("%s - %s\n", profesores2.get(i).obtenerNombre(),
-                    profesores2.get(i).obtenerTipo());
+                    profesores2.get(i).obtenerTipo()); // get = obtener valores
         }
         
         System.out.println("-----------------------------");
