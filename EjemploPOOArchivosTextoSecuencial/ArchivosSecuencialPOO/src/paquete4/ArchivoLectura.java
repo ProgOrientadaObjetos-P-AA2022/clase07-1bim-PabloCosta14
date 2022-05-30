@@ -44,7 +44,7 @@ public class ArchivoLectura {
 
     public void establecerRutaArchivo() {
         rutaArchivo = String.format("data/%s.txt",
-                obtenerNombreArchivo());;
+                obtenerNombreArchivo());
     }
 
     public String obtenerNombreArchivo() {
@@ -68,7 +68,7 @@ public class ArchivoLectura {
                 String linea = entrada.nextLine();
 
                 ArrayList<String> linea_partes = new ArrayList<>(
-                        Arrays.asList(linea.split(";"))
+                        Arrays.asList(linea.split("\\|"))
                 );
                 Empresa p = new Empresa(linea_partes.get(0),
                         linea_partes.get(1));

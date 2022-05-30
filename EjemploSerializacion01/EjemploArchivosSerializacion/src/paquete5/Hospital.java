@@ -11,8 +11,42 @@ import java.io.Serializable;
  *
  * @author reroes
  */
-public class Hospital implements Serializable{
+public class Hospital implements Serializable {
+
     String nombre;
     int numeroCamas;
     double presupuesto;
+
+    public Hospital(String n, int t, double s) {
+        nombre = n;
+        numeroCamas = t;
+        presupuesto = s;
+    }
+
+  
+    public void establecerNombre(String n) {
+        nombre = n;
+    }
+
+    public void establecerNumeroCamas(int n) {
+        numeroCamas = n;
+    }
+
+    public void establecerpresupuesto(double n) {
+        presupuesto = n;
+
+    }
+
+    public String obtenerNombre() {
+        return nombre;
+    }
+
+    public int obtenerCamas() {
+        return numeroCamas;
+    }
+
+    public double obtenerPresupuesto() {
+        return presupuesto;
+    }
+
 }
